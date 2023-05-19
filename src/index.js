@@ -1,11 +1,13 @@
-
-let activeKoala = null
+import { koalas } from './koalas.js'
+import {renderKoalaList} from './renderKoalaList'
+import {activeKoala, selectKoala} from './selectKoala' 
+//let activeKoala = null
 
 // Changes the active koala, then re-renders the page to display that koala
-let selectKoala = koala => {
+/*let selectKoala = koala => {
     activeKoala = koala
     render()
-}
+}*/
 
 // Called once when the page loads, and again every time a koala is selected
 let render = () => {
@@ -21,7 +23,7 @@ let render = () => {
 }
 
 
-// Renders a list of koalas
+/* Renders a list of koalas
 let renderKoalaList = koalas => {
     let koalaContainer = document.createElement('div')
 
@@ -33,10 +35,10 @@ let renderKoalaList = koalas => {
     })
 
     return koalaContainer
-}
+}*/
 
 // Renders a card to display a single koala
-let renderKoalaCard = koala => {
+/*let renderKoalaCard = koala => {
     let koalaCard = document.createElement('div')
     koalaCard.setAttribute('class', 'item')
     koalaCard.style.cursor = 'pointer';
@@ -53,10 +55,10 @@ let renderKoalaCard = koala => {
     )
 
     return koalaCard
-}
+}*/
 
 // Renders the image of a koala card
-let renderKoalaCardImage = koala => {
+/*let renderKoalaCardImage = koala => {
     let imageContainer = document.createElement('div')
     let koalaImage = document.createElement('img')
 
@@ -67,10 +69,10 @@ let renderKoalaCardImage = koala => {
     imageContainer.append(koalaImage)
 
     return imageContainer
-}
+}*/
 
 // Renders the content of a koala card (their name and description)
-let renderKoalaCardContent = koala => {
+/*let renderKoalaCardContent = koala => {
     let koalaContent = document.createElement('div')
     koalaContent.setAttribute('class', 'content')
 
@@ -91,7 +93,7 @@ let renderKoalaCardContent = koala => {
     )
 
     return koalaContent
-}
+}*/
 
 // Renders a big image of a selected koala
 let renderActiveKoala = koala => {
